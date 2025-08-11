@@ -67,3 +67,10 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         });
     });
 });
+// ===== Enroll Now Button Click =====
+document.querySelectorAll('.course .btn').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault(); // stop page from jumping to top
+        alert('Enrollment completed!');
+    });
+});
